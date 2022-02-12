@@ -1,0 +1,86 @@
+
+
+.mainBox {
+    height: 20vh;
+    background: #2D637A;
+  }
+  .hero{
+    font-size: 36pt;
+  }
+  .heroPara{
+    margin-top: 5vh;
+    font-size: 18pt;
+    text-align: center;
+    width: 50vw;
+  }
+  @media (max-width: 1200px) {
+    .hero{
+      font-size: 26pt;
+    }
+    .heroPara{
+      margin-top: 5vh;
+      font-size: 18pt;
+      text-align: center;
+      width: 70vw;
+    }
+    .servicesHeading{
+      font-size: 22pt;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .hero{
+      font-size: 24pt;
+    }
+    .heroPara{
+      margin-top: 5vh;
+      font-size: 18pt;
+      text-align: center;
+      width: 80vw;
+    }
+    .servicesHeading{
+      font-size: 22pt;
+    }
+  
+  
+    
+  }
+  
+  @media (max-width: 768px) {
+    .hero{
+      font-size: 22pt;
+    }
+    .heroPara{
+      margin-top: 5vh;
+      font-size: 18pt;
+      text-align: center;
+      width: 95vw;
+    }
+    .servicesHeading{
+      font-size: 20pt;
+    }
+    
+  
+    
+  }
+  
+  
+  
+  @media (max-width: 600px) {
+    .hero{
+      font-size: 20pt;
+    }
+    .heroPara{
+      margin-top: 5vh;
+      font-size: 14pt;
+      text-align: center;
+      width: 100vw;
+    }
+    .servicesHeading{
+      font-size: 20pt;
+    }
+    
+  
+  
+  }
+ 

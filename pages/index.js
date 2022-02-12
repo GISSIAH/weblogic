@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-
+import { Box } from '@mui/system'
+import { Grid, Typography } from '@mui/material'
+import ServiceCard from '../components/serviceCard'
+import { motion } from "framer-motion"
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -11,59 +14,84 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
+      <main >
+        <Box
+          className={styles.mainBox}
           >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
+          <motion.div
+            initial={{ y: 250 }}
+            animate={{ y: -10 }}
+            transition={{ delay: 0.25, type: 'spring', stiffness:120 }}
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              alignItems: 'center',
+              height: '100%',
+              color: 'white'
+            }}
           >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+            <Typography variant="h1" sx={{ fontWeight: '500' }} className={styles.hero}>Establishing your digital existance</Typography>
+            <Typography variant="body1" sx={{ fontWeight: '300' }} className={styles.heroPara}>Get your website made the way it should be: clean, functional, secure, and 100% custom. We’re the Malawi web design experts who know how to bring customers to your digital door.</Typography>
+
+          </motion.div>
+        </Box>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.25, duration: 1.5 }}
+        >
+          <Box sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}>
+            <Typography variant="h2" sx={{ fontWeight: '600' }} className={styles.servicesHeading}>Our Services</Typography>
+            <div className={styles.servicesContainer}>
+              <Grid container
+                spacing={6}>
+                <Grid item
+                  xs={12}
+                  sm={6}
+                  md={6}
+                  lg={3}
+                  xl={3}
+                >
+                  <ServiceCard title="Web Design" />
+                </Grid>
+                <Grid item
+                  xs={12}
+                  sm={6}
+                  md={6}
+                  lg={3}
+                  xl={3}>
+                  <ServiceCard title="Web Development" />
+                </Grid>
+                <Grid item
+                  xs={12}
+                  sm={6}
+                  md={6}
+                  lg={3}
+                  xl={3}>
+                  <ServiceCard title="Web Hosting" />
+                </Grid>
+                <Grid item
+                  xs={12}
+                  sm={6}
+                  md={6}
+                  lg={3}
+                  xl={3}>
+                  <ServiceCard title="Digital Transformation" />
+                </Grid>
+              </Grid>
+            </div>
+
+          </Box>
+
+        </motion.div>
+
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
+    </div >
   )
 }

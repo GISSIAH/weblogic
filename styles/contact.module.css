@@ -1,0 +1,126 @@
+
+
+.mainBox {
+    height: 20vh;
+    background: #2D637A;
+  }
+  .hero{
+    font-size: 36pt;
+  }
+  .heroRow{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap:5vw;
+  }
+  .midSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 5vh;
+  }
+  
+  
+  .servicesContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 1200px) {
+    .hero{
+      font-size: 26pt;
+    }
+    .heroPara{
+      margin-top: 5vh;
+      font-size: 18pt;
+      text-align: center;
+      width: 70vw;
+    }
+    .servicesHeading{
+      font-size: 22pt;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .hero{
+      font-size: 24pt;
+    }
+    .heroPara{
+      margin-top: 5vh;
+      font-size: 18pt;
+      text-align: center;
+      width: 80vw;
+    }
+    .servicesHeading{
+      font-size: 22pt;
+    }
+  
+  
+    
+  }
+  
+  @media (max-width: 768px) {
+    .hero{
+      font-size: 22pt;
+    }
+    .heroPara{
+      margin-top: 5vh;
+      font-size: 18pt;
+      text-align: center;
+      width: 95vw;
+    }
+    .servicesHeading{
+      font-size: 20pt;
+    }
+    
+    
+  
+    
+  }
+  
+  
+  
+  @media (max-width: 600px) {
+    .hero{
+      font-size: 20pt;
+    }
+    .heroPara{
+      margin-top: 5vh;
+      font-size: 14pt;
+      text-align: center;
+      width: 100vw;
+    }
+    .servicesHeading{
+      font-size: 20pt;
+    }
+    .heroRow{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:5vw;
+    }
+    
+  
+  
+  }
+  @media (max-width: 375px) {
+    .hero{
+      font-size: 16pt;
+    }
+    .heroPara{
+      margin-top: 5vh;
+      font-size: 13pt;
+      text-align: center;
+      width: 100vw;
+    }
+    .servicesHeading{
+      font-size: 20pt;
+    }
+    
+  
+  
+  }
+  
+  

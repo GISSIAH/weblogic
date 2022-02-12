@@ -1,0 +1,132 @@
+.serviceTitle{
+    font-size: 30pt;
+}
+.sectionContainer{
+    width: 50vw;
+    margin-bottom: 5vh;
+}
+.serviceImage{
+    width: 100px;
+    height: 100px;
+}
+.serviceCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 15vw;
+}
+.servicePara{
+    font-size: 20pt;
+}
+
+
+@media (max-width: 1200px) {
+    .serviceTitle{
+        font-size: 28pt;
+    }
+    .serviceCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        width: 100%;
+    }
+    .servicePara{
+        font-size: 16pt;
+    }
+  } 
+@media (max-width: 992px) {
+    .serviceTitle{
+        font-size: 26pt;
+    }
+    .serviceCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 25vh;
+        width: 100%
+    }
+    .servicePara{
+        font-size: 16pt;
+    }
+   
+    
+  }
+  
+@media (max-width: 768px) {
+    .serviceTitle{
+        font-size: 24pt;
+    }
+    .serviceCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 25vh;
+        width: 100%
+    }
+    .sectionContainer{
+        width: 75vw;
+        margin-bottom: 5vh;
+    }
+    .servicePara{
+        font-size: 16pt;
+    }
+   
+    
+  
+    
+  }
+  
+  
+  
+@media (max-width: 600px) {
+    .serviceTitle{
+        font-size: 18pt;
+    }
+    .serviceCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        width: 100%
+    }
+    .sectionContainer{
+        width: 100vw;
+        margin-bottom: 5vh;
+    }
+    .servicePara{
+        font-size: 16pt;
+    }
+   
+    
+  
+  }
+ 
+  @media (max-width: 375px) {
+    .serviceTitle{
+        font-size: 18pt;
+    }
+    .serviceCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        width: 100%
+    }
+    .sectionContainer{
+        width: 100vw;
+        margin-bottom: 5vh;
+    }
+    .servicePara{
+        font-size: 13pt;
+    }
+  
+  }
+    
