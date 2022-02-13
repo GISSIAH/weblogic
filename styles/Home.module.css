@@ -5,11 +5,11 @@
   background: #2D637A;
 }
 .hero{
-  font-size: 36pt;
+  font-size: 3rem;
 }
 .heroPara{
   margin-top: 5vh;
-  font-size: 18pt;
+  font-size: 1.5rem;
   text-align: center;
   width: 50vw;
 }
@@ -38,31 +38,31 @@
 }
 @media (max-width: 1200px) {
   .hero{
-    font-size: 26pt;
+    font-size: 3rem;
   }
   .heroPara{
     margin-top: 5vh;
-    font-size: 18pt;
+    font-size: 1.5rem;
     text-align: center;
     width: 70vw;
   }
   .servicesHeading{
-    font-size: 22pt;
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 992px) {
   .hero{
-    font-size: 24pt;
+    font-size: 2rem;
   }
   .heroPara{
     margin-top: 5vh;
-    font-size: 18pt;
+    font-size: 1.25rem;
     text-align: center;
     width: 80vw;
   }
   .servicesHeading{
-    font-size: 22pt;
+    font-size: 1.75rem;
   }
 
 
@@ -71,16 +71,16 @@
 
 @media (max-width: 768px) {
   .hero{
-    font-size: 22pt;
+    font-size: 2.25rem;
   }
   .heroPara{
     margin-top: 5vh;
-    font-size: 18pt;
+    font-size: 1.25rem;
     text-align: center;
     width: 95vw;
   }
   .servicesHeading{
-    font-size: 20pt;
+    font-size: 2rem;
   }
   
   
@@ -92,16 +92,16 @@
 
 @media (max-width: 600px) {
   .hero{
-    font-size: 20pt;
+    font-size: 1.5rem;
   }
   .heroPara{
     margin-top: 5vh;
-    font-size: 14pt;
+    font-size: 1rem;
     text-align: center;
     width: 100vw;
   }
   .servicesHeading{
-    font-size: 20pt;
+    font-size: 1.5rem;
   }
   
 
@@ -109,16 +109,16 @@
 }
 @media (max-width: 375px) {
   .hero{
-    font-size: 16pt;
+    font-size: 1.25rem;
   }
   .heroPara{
     margin-top: 5vh;
-    font-size: 13pt;
+    font-size: 1rem;
     text-align: center;
     width: 100vw;
   }
   .servicesHeading{
-    font-size: 20pt;
+    font-size: 1.25rem;
   }
   
 
