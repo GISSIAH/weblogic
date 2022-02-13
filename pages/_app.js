@@ -1,11 +1,10 @@
-import { createTheme } from '@mui/material'
+import { createTheme, responsiveFontSizes } from '@mui/material'
 import { ThemeProvider } from '@mui/system'
 import Layout from '../components/layout'
 import '../styles/globals.css'
 
-
 function MyApp({ Component, pageProps }) {
-  const theme = createTheme({
+  let theme = createTheme({
     shape: {
       borderRadius: 10
     },
@@ -41,13 +40,12 @@ function MyApp({ Component, pageProps }) {
       h6: {
         fontWeight: 400
       },
-      body1:{
-        fontSize:'18pt'
-      }
     }
   })
+
+  const responsivetheme =responsiveFontSizes(theme)
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={responsivetheme}>
       <Layout>
         <Component {...pageProps} />
       </Layout>
