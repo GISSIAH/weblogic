@@ -35,13 +35,32 @@ function MyApp({ Component, pageProps }) {
     typography: {
       fontFamily: "Roboto, sans-serif",
       h1: {
-        fontSize:'36pt',[`@media screen and (max-width: 600px)`]: {
-          fontSize: "1rem"
+        fontSize:'36pt',[`@media screen and (max-width: 1200px)`]: {
+          fontSize: "3rem"
+        },[`@media screen and (max-width: 992px)`]: {
+          fontSize: "2rem"
+        },[`@media screen and (max-width: 768px)`]: {
+          fontSize: "2.25rem"
+        },[`@media screen and (max-width: 600px)`]: {
+          fontSize: "1.5rem"
+        },[`@media screen and (max-width: 375px)`]: {
+          fontSize: "1.25rem"
         },
         fontWeight: 600
       },
       h2: {
-        fontWeight: 600
+        fontWeight: 600,
+        [`@media screen and (max-width: 1200px)`]: {
+          fontSize: "2.5rem"
+        },[`@media screen and (max-width: 992px)`]: {
+          fontSize: "1.75rem"
+        },[`@media screen and (max-width: 768px)`]: {
+          fontSize: "1.5rem"
+        },[`@media screen and (max-width: 600px)`]: {
+          fontSize: "1.35rem"
+        },[`@media screen and (max-width: 375px)`]: {
+          fontSize: "1.05rem"
+        },
       },
       h3: {
         fontWeight: 500
@@ -55,6 +74,21 @@ function MyApp({ Component, pageProps }) {
       h6: {
         fontWeight: 400
       },
+      body1:{
+        fontSize:'1.5rem',
+        [`@media screen and (max-width: 1200px)`]: {
+          fontSize: "1.5rem"
+        },[`@media screen and (max-width: 992px)`]: {
+          fontSize: "1.25rem"
+        },[`@media screen and (max-width: 768px)`]: {
+          fontSize: "1.25rem"
+        },[`@media screen and (max-width: 600px)`]: {
+          fontSize: "1rem"
+        },[`@media screen and (max-width: 375px)`]: {
+          fontSize: "1rem"
+        },
+
+      }
     }
   })
 
