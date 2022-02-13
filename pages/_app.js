@@ -23,10 +23,10 @@ function MyApp({ Component, pageProps }) {
     typography: {
       fontFamily: "Roboto, sans-serif",
       h1: {
+        fontSize:'36pt',
         fontWeight: 600
       },
       h2: {
-
         fontWeight: 600
       },
       h3: {
@@ -40,6 +40,9 @@ function MyApp({ Component, pageProps }) {
       },
       h6: {
         fontWeight: 400
+      },
+      body1:{
+        fontSize:'18pt'
       }
     }
   })
