@@ -1,4 +1,4 @@
-import { createTheme, responsiveFontSizes } from '@mui/material'
+import { createTheme} from '@mui/material'
 import { ThemeProvider } from '@mui/system'
 import Layout from '../components/layout'
 import '../styles/globals.css'
@@ -43,9 +43,9 @@ function MyApp({ Component, pageProps }) {
     }
   })
 
-  const responsivetheme =responsiveFontSizes(theme)
+
   return (
-    <ThemeProvider theme={responsivetheme}>
+    <ThemeProvider theme={theme}>
       <Layout>
         <Component {...pageProps} />
       </Layout>

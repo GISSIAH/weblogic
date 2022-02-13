@@ -4,7 +4,6 @@ import styles from '../styles/Home.module.css'
 import { Box } from '@mui/system'
 import { Grid, Typography } from '@mui/material'
 import ServiceCard from '../components/serviceCard'
-import { motion } from "framer-motion"
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -16,80 +15,69 @@ export default function Home() {
 
       <main >
         <Box
-          className={styles.mainBox}
-          >
-          <motion.div
-            initial={{ y: 250 }}
-            animate={{ y: -10 }}
-            transition={{ delay: 0.25, type: 'spring', stiffness:120 }}
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              alignItems: 'center',
-              height: '100%',
-              color: 'white'
-            }}
-          >
-            <Typography variant="h1" sx={{ fontWeight: '500' }} className={styles.hero}>Establishing your digital existance</Typography>
-            <Typography variant="body1" sx={{ fontWeight: '300' }} className={styles.heroPara}>Get your website made the way it should be: clean, functional, secure, and 100% custom. We’re the Malawi web design experts who know how to bring customers to your digital door.</Typography>
+          className={styles.mainBox}>
 
-          </motion.div>
-        </Box>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.25, duration: 1.5 }}
-        >
           <Box sx={{
             display: 'flex',
             flexDirection: 'column',
+            justifyContent: 'center',
             alignItems: 'center',
+            height: '100%',
+            color: 'white'
           }}>
-            <Typography variant="h2" sx={{ fontWeight: '600' }} className={styles.servicesHeading}>Our Services</Typography>
-            <div className={styles.servicesContainer}>
-              <Grid container
-                spacing={6}>
-                <Grid item
-                  xs={12}
-                  sm={6}
-                  md={6}
-                  lg={3}
-                  xl={3}
-                >
-                  <ServiceCard title="Web Design" />
-                </Grid>
-                <Grid item
-                  xs={12}
-                  sm={6}
-                  md={6}
-                  lg={3}
-                  xl={3}>
-                  <ServiceCard title="Web Development" />
-                </Grid>
-                <Grid item
-                  xs={12}
-                  sm={6}
-                  md={6}
-                  lg={3}
-                  xl={3}>
-                  <ServiceCard title="Web Hosting" />
-                </Grid>
-                <Grid item
-                  xs={12}
-                  sm={6}
-                  md={6}
-                  lg={3}
-                  xl={3}>
-                  <ServiceCard title="Digital Transformation" />
-                </Grid>
-              </Grid>
-            </div>
+            <Typography variant="h1" sx={{ fontWeight: '500' }} className={styles.hero}>Establishing your digital existance</Typography>
+            <Typography variant="body1" sx={{ fontWeight: '300' }} className={styles.heroPara}>Get your website made the way it should be: clean, functional, secure, and 100% custom. We’re the Malawi web design experts who know how to bring customers to your digital door.</Typography>
 
           </Box>
 
-        </motion.div>
 
+        </Box>
+        <Box sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+        }}>
+          <Typography variant="h2" sx={{ fontWeight: '600' }} className={styles.servicesHeading}>Our Services</Typography>
+          <div className={styles.servicesContainer}>
+            <Grid container
+              spacing={6}>
+              <Grid item
+                xs={12}
+                sm={6}
+                md={6}
+                lg={3}
+                xl={3}
+              >
+                <ServiceCard title="Web Design" />
+              </Grid>
+              <Grid item
+                xs={12}
+                sm={6}
+                md={6}
+                lg={3}
+                xl={3}>
+                <ServiceCard title="Web Development" />
+              </Grid>
+              <Grid item
+                xs={12}
+                sm={6}
+                md={6}
+                lg={3}
+                xl={3}>
+                <ServiceCard title="Web Hosting" />
+              </Grid>
+              <Grid item
+                xs={12}
+                sm={6}
+                md={6}
+                lg={3}
+                xl={3}>
+                <ServiceCard title="Digital Transformation" />
+              </Grid>
+            </Grid>
+          </div>
+
+        </Box>
       </main>
 
     </div >

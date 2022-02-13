@@ -1,12 +1,9 @@
 import { Card, CardContent, CardMedia, Typography } from "@mui/material"
-import { motion } from "framer-motion"
 import styles from "../styles/service.module.css"
 
 export default function ServiceCard(props) {
     return (
-        <motion.div
-            
-        >
+
             <Card className={styles.serviceCard}>
                 <CardMedia
                     alt="service"
@@ -18,7 +15,6 @@ export default function ServiceCard(props) {
                 </CardContent>
             </Card>
 
-        </motion.div>
 
     )
 }

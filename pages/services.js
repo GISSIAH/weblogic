@@ -20,10 +20,8 @@ export default function services() {
                 <Box
                     className={styles.mainBox}
                 >
-                    <motion.div
-                        initial={{ y: 250 }}
-                        animate={{ y: -10 }}
-                        transition={{ delay: 0.25, type: 'spring', stiffness: 120 }}
+                    <div
+                        
                         style={{
                             display: 'flex',
                             flexDirection: 'column',
@@ -36,7 +34,7 @@ export default function services() {
                     >
                         <Typography variant="h1" sx={{ fontWeight: '500' }} className={styles.hero}>Our Services</Typography>
 
-                    </motion.div>
+                    </div>
 
                 </Box>
 
