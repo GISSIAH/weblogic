@@ -4,6 +4,19 @@ import Layout from '../components/layout'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
+  /*
+  const thme = createMuiTheme({
+    breakpoints,
+    typography: {
+      h5: {
+        fontSize: "1.5625rem",
+        [`@media screen and (max-width: ${breakpoints.values.lg}px)`]: {
+          fontSize: "0.6785rem"
+        }
+      }
+    }
+  })
+  */
   let theme = createTheme({
     shape: {
       borderRadius: 10
@@ -22,7 +35,9 @@ function MyApp({ Component, pageProps }) {
     typography: {
       fontFamily: "Roboto, sans-serif",
       h1: {
-        fontSize:'36pt',
+        fontSize:'36pt',[`@media screen and (max-width: 600px)`]: {
+          fontSize: "1rem"
+        },
         fontWeight: 600
       },
       h2: {
