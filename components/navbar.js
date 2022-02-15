@@ -30,7 +30,7 @@ export default function Navbar() {
             </div>
             <div className={styles.mobileMenu}>
                 <div className={styles.logo}>
-                    <Typography variant='h4'  style={{ fontWeight: '600' }}>
+                    <Typography variant='h4'  style={{ fontSize:'1.8rem', fontWeight: '600' }}>
                         Web Logic
                     </Typography>
                     <div
