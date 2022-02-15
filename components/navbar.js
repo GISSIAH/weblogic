@@ -15,16 +15,16 @@ export default function Navbar() {
                 </div>
                 <div className={styles.rightSide}>
                     <Link href="/">
-                        <a onClick={()=>{setClicked(false)}}><Typography varint="overline" style={{ fontStyle: 'bold', fontWeight: '500' }}> Home</Typography></a>
+                        <a onClick={()=>{setClicked(false)}}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500' }}> Home</Typography></a>
                     </Link>
                     <Link href="/services">
-                        <a onClick={()=>{setClicked(false)}}><Typography varint="overline" style={{ fontStyle: 'bold', fontWeight: '500' }}>Services</Typography></a>
+                        <a onClick={()=>{setClicked(false)}}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500' }}>Services</Typography></a>
                     </Link>
                     <Link href="/about">
-                        <a onClick={()=>{setClicked(false)}}><Typography varint="overline" style={{ fontStyle: 'bold', fontWeight: '500' }}>About</Typography></a>
+                        <a onClick={()=>{setClicked(false)}}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500' }}>About</Typography></a>
                     </Link>
                     <Link href="/contact">
-                        <a onClick={()=>{setClicked(false)}}><Typography varint="overline" style={{ fontStyle: 'bold', fontWeight: '500' }}>Contact</Typography></a>
+                        <a onClick={()=>{setClicked(false)}}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500' }}>Contact</Typography></a>
                     </Link>
                 </div>
             </div>
@@ -44,16 +44,16 @@ export default function Navbar() {
                 </div>
                 <ul className={clicked ? styles.active : styles.normal}>
                     <Link href="/">
-                        <a onClick={()=>{setClicked(false)}}><Typography varint="body1" style={{ fontStyle: 'bold', fontWeight: '500',marginTop:'5px' }}> Home</Typography></a>
+                        <a onClick={()=>{setClicked(false)}}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500',marginTop:'5px' }}> Home</Typography></a>
                     </Link>
                     <Link href="/services">
-                        <a onClick={()=>{setClicked(false)}}><Typography varint="body1" style={{ fontStyle: 'bold', fontWeight: '500',marginTop:'5px' }}>Services</Typography></a>
+                        <a onClick={()=>{setClicked(false)}}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500',marginTop:'5px' }}>Services</Typography></a>
                     </Link>
                     <Link href="/about">
-                        <a onClick={()=>{setClicked(false)}}><Typography varint="body1" style={{ fontStyle: 'bold', fontWeight: '500',marginTop:'5px' }}>About</Typography></a>
+                        <a onClick={()=>{setClicked(false)}}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500',marginTop:'5px' }}>About</Typography></a>
                     </Link>
                     <Link href="/contact">
-                        <a onClick={()=>{setClicked(false)}}><Typography varint="overline" style={{ fontStyle: 'bold', fontWeight: '500' }}>Contact</Typography></a>
+                        <a onClick={()=>{setClicked(false)}}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500' }}>Contact</Typography></a>
                     </Link>
                 </ul>
 

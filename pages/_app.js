@@ -66,7 +66,18 @@ function MyApp({ Component, pageProps }) {
         fontWeight: 500
       },
       h4: {
-        fontWeight: 500
+        fontWeight: 500,
+        [`@media screen and (max-width: 1200px)`]: {
+          fontSize: "2.5rem"
+        },[`@media screen and (max-width: 992px)`]: {
+          fontSize: "1.75rem"
+        },[`@media screen and (max-width: 768px)`]: {
+          fontSize: "1.5rem"
+        },[`@media screen and (max-width: 600px)`]: {
+          fontSize: "1.35rem"
+        },[`@media screen and (max-width: 375px)`]: {
+          fontSize: "1.05rem"
+        },
       },
       h5: {
         fontWeight: 400
