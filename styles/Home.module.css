@@ -85,6 +85,11 @@
   .servicesHeading{
     font-size: 2rem;
   }
+  .servicesContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   
 
@@ -108,7 +113,11 @@
     
   }
   .servicesContainer{
-    margin-top: 2.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
   }
   
 
@@ -126,6 +135,13 @@
   }
   .servicesHeading{
     font-size: 1.25rem;
+  }
+  .servicesContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
   }
   
 

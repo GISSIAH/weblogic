@@ -15,16 +15,16 @@ export default function Navbar() {
                 </div>
                 <div className={styles.rightSide}>
                     <Link href="/">
-                        <a onClick={()=>{setClicked(false)}}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500' }}> Home</Typography></a>
+                        <a onClick={()=>{setClicked(false)}}><Typography variant="overline" style={{ fontStyle: 'bold', fontWeight: '500' }}> Home</Typography></a>
                     </Link>
                     <Link href="/services">
-                        <a onClick={()=>{setClicked(false)}}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500' }}>Services</Typography></a>
+                        <a onClick={()=>{setClicked(false)}}><Typography variant="overline" style={{ fontStyle: 'bold', fontWeight: '500' }}>Services</Typography></a>
                     </Link>
                     <Link href="/about">
-                        <a onClick={()=>{setClicked(false)}}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500' }}>About</Typography></a>
+                        <a onClick={()=>{setClicked(false)}}><Typography variant="overline" style={{ fontStyle: 'bold', fontWeight: '500' }}>About</Typography></a>
                     </Link>
                     <Link href="/contact">
-                        <a onClick={()=>{setClicked(false)}}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500' }}>Contact</Typography></a>
+                        <a onClick={()=>{setClicked(false)}}><Typography variant="overline" style={{ fontStyle: 'bold', fontWeight: '500' }}>Contact</Typography></a>
                     </Link>
                 </div>
             </div>
@@ -42,7 +42,7 @@ export default function Navbar() {
                         {clicked ? <FaTimes size={20}/> : <FaBars size={25} color="white" />}
                     </div>
                 </div>
-                <ul className={clicked ? styles.active : styles.normal}>
+                <div className={clicked ? styles.active : styles.normal}>
                     <Link href="/">
                         <a onClick={()=>{setClicked(false)}}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500',marginTop:'5px' }}> Home</Typography></a>
                     </Link>
@@ -55,7 +55,7 @@ export default function Navbar() {
                     <Link href="/contact">
                         <a onClick={()=>{setClicked(false)}}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500' }}>Contact</Typography></a>
                     </Link>
-                </ul>
+                </div>
 
             </div>
 

@@ -17,16 +17,16 @@ export default function Home() {
       <main >
         <Box
           className={styles.mainBox}
-          >
+        >
           <motion.div
             initial={{ y: 250 }}
             animate={{ y: -10 }}
-            transition={{ delay: 0.25, type: 'spring', stiffness:120 }}
+            transition={{ delay: 0.25, type: 'spring', stiffness: 120 }}
             style={{
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
-              gap:'20px',
+              gap: '20px',
               alignItems: 'center',
               height: '100%',
               color: 'white'
@@ -48,41 +48,43 @@ export default function Home() {
             alignItems: 'center',
           }}>
             <Typography variant="h2" sx={{ fontWeight: '600' }} className={styles.servicesHeading}>Our Services</Typography>
-            <div className={styles.servicesContainer}>
-              <Grid container
+            <div >
+              <Grid
+                className={styles.servicesContainer}
+                container
                 spacing={6}>
                 <Grid item
-                  xs={12}
-                  sm={6}
+                  xs={10}
+                  sm={5}
                   md={6}
                   lg={3}
                   xl={3}
                 >
-                  <ServiceCard title="Web Design" />
+                  <ServiceCard title="Web Design" url="https://res.cloudinary.com/attic-gis/image/upload/v1644162455/NicePng_technology-icon-png_1192437_fads0n.png" />
                 </Grid>
                 <Grid item
-                  xs={12}
-                  sm={6}
+                  xs={10}
+                  sm={5}
                   md={6}
                   lg={3}
                   xl={3}>
-                  <ServiceCard title="Web Development" />
+                  <ServiceCard title="Web Development" url="https://res.cloudinary.com/attic-gis/image/upload/v1645004269/code-1076536_1920_n0yh46.jpg" />
                 </Grid>
                 <Grid item
-                  xs={12}
-                  sm={6}
+                  xs={10}
+                  sm={5}
                   md={6}
                   lg={3}
                   xl={3}>
-                  <ServiceCard title="Web Hosting" />
+                  <ServiceCard title="Web Hosting" url="https://res.cloudinary.com/attic-gis/image/upload/v1645004264/cloud-3406627_1920_yhuijn.jpg" />
                 </Grid>
                 <Grid item
-                  xs={12}
-                  sm={6}
+                  xs={10}
+                  sm={5}
                   md={6}
                   lg={3}
                   xl={3}>
-                  <ServiceCard title="Digital Transformation" />
+                  <ServiceCard title="Digital Transformation" url="https://res.cloudinary.com/attic-gis/image/upload/v1645004266/digitization-5231610_1920_pyad0t.jpg" />
                 </Grid>
               </Grid>
             </div>

@@ -1,7 +1,7 @@
 import Head from "next/head"
 import styles from "../styles/services.module.css"
-import { Box } from '@mui/system'
-import { Typography } from '@mui/material'
+
+import { Typography, Paper, Box, Grid } from '@mui/material'
 import ServiceSection from "../components/serviceSection"
 import { motion } from "framer-motion"
 
@@ -21,7 +21,7 @@ export default function services() {
                     className={styles.mainBox}
                 >
                     <div
-                        
+
                         style={{
                             display: 'flex',
                             flexDirection: 'column',
@@ -37,18 +37,35 @@ export default function services() {
                     </div>
 
                 </Box>
+                <div className={styles.gridWrapper}>
+                    <Grid container spacing={6} maxWidth>
+                        <Grid item
+                            xs={12}
+                            sm={12}
+                            md={6}
+                            lg={6}
+                            xl={6}>
+                            <Paper>
+                                <ServiceSection url="https://res.cloudinary.com/attic-gis/image/upload/v1644162455/NicePng_technology-icon-png_1192437_fads0n.png" title="Web Design" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." />
+                                <ServiceSection url="https://res.cloudinary.com/attic-gis/image/upload/v1645004269/code-1076536_1920_n0yh46.jpg" title="Web Development" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." />
+                            </Paper>
 
-                <Box sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                }}>
-                    <ServiceSection title="Web Design" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." />
-                    <ServiceSection title="Web Development" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." />
-                    <ServiceSection title="Web Hosting" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." />
-                    <ServiceSection title="Digital Transformation" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." />
-                </Box>
+                        </Grid>
+                        <Grid item
+                            xs={12}
+                            sm={12}
+                            md={6}
+                            lg={6}
+                            xl={6}>
+                            <Paper>
+                                <ServiceSection url="https://res.cloudinary.com/attic-gis/image/upload/v1645004264/cloud-3406627_1920_yhuijn.jpg" title="Web Hosting" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." />
+                                <ServiceSection url="https://res.cloudinary.com/attic-gis/image/upload/v1645004266/digitization-5231610_1920_pyad0t.jpg" title="Digital Transformation" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged." />
+                            </Paper>
+                        </Grid>
+                    </Grid>
+
+                </div>
+
 
             </main>
 

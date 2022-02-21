@@ -41,12 +41,13 @@
     cursor: pointer;
   }
   .active {
-    background: #519ab9;
+    background: #2D637A;
     backdrop-filter: blur(3px);
     text-align: left;
     list-style-position: inside;
     left: 0;
     padding-top: 10px;
+    padding-left: 10px;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 9999;

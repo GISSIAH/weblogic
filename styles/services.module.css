@@ -13,6 +13,12 @@
     text-align: center;
     width: 50vw;
   }
+  .gridWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   @media (max-width: 1200px) {
     .hero{
       font-size: 26pt;
@@ -26,6 +32,8 @@
     .servicesHeading{
       font-size: 22pt;
     }
+
+
   }
   
   @media (max-width: 992px) {
@@ -41,8 +49,10 @@
     .servicesHeading{
       font-size: 22pt;
     }
-  
-  
+    .paperContainer{
+      width: 45vw;
+    }
+
     
   }
   
@@ -59,7 +69,7 @@
     .servicesHeading{
       font-size: 20pt;
     }
-    
+
   
     
   }
@@ -79,7 +89,7 @@
     .servicesHeading{
       font-size: 20pt;
     }
-    
+
   
   
   }
