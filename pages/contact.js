@@ -86,7 +86,7 @@ export default function contact() {
           justifyContent: 'center',
           py: 2
         }}>
-          <form name="contact" method="POST" data-netlify="true">
+          <form name="contact" method="POST" data-netlify="true" action="/success">
             <Grid item
               xs={12}
               sm={12}
