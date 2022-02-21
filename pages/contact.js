@@ -5,6 +5,7 @@ import { Card, CardContent, Typography, Grid, TextField, Button } from '@mui/mat
 import { motion } from "framer-motion"
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai"
 import { FaFacebook, FaInstagram, FaTwitter, FaTiktok } from "react-icons/fa"
+import contactForm from "../components/contactFrom"
 export default function contact() {
 
   return (
@@ -86,62 +87,8 @@ export default function contact() {
           justifyContent: 'center',
           py: 2
         }}>
-          <form name="contact" method="POST" data-netlify="true" action="/success">
-            <Grid item
-              xs={12}
-              sm={12}
-              md={12}
-              lg={12}
-              xl={12}
-
-            >
-              <TextField
-                variant="outlined"
-                type="text"
-                name="name"
-                label="Full Name"
-              />
-            </Grid>
-            <Grid item
-              xs={12}
-              sm={12}
-              md={12}
-              lg={12}
-              xl={12}
-            >
-              <TextField
-                variant="outlined"
-                type="text"
-                name="email"
-                label="Your Email"
-              />
-            </Grid>
-            <Grid item
-                xs={12}
-                sm={12}
-                md={12}
-                lg={12}
-                xl={12}>
-                <TextField
-                  variant="outlined"
-                  type="text"
-                  name="mesage"
-                  label="Message"
-                />
-              </Grid>
-              <Grid item
-                xs={12}
-                sm={12}
-                md={12}
-                lg={12}
-                xl={12}>
-                <Button variant="contained" type="submit" color="success">Send</Button>
-              </Grid>
-
-
-
-          </form>
-
+          
+        <contactForm/>
 
         </Grid>
 
