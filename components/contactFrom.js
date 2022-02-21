@@ -1,7 +1,7 @@
 import {  Grid, TextField, Button } from '@mui/material'
 export default function ContactForm() {
   return (
-    <form name="contact" action="/success" method="POST" data-netlify="true" >
+    <form name="contact" method="POST" data-netlify="true" >
     <input type="hidden" name="form-name" value="contact"/>
             <Grid item
               xs={12}
