@@ -35,8 +35,8 @@ export default function contact() {
           py: 2
         }}>
           <Grid item
-            xs={12}
-            sm={4}
+            xs={10}
+            sm={5}
             md={4}
             lg={4}
             xl={3}
@@ -58,8 +58,8 @@ export default function contact() {
 
           </Grid>
           <Grid item
-            xs={12}
-            sm={4}
+            xs={10}
+            sm={5}
             md={4}
             lg={4}
             xl={3}
