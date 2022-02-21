@@ -2,6 +2,7 @@ import {  Grid, TextField, Button } from '@mui/material'
 export default function ContactForm() {
   return (
     <form name="contact" action="/success" method="POST" data-netlify="true" >
+    <input type="hidden" name="form-name" value="contact"/>
             <Grid item
               xs={12}
               sm={12}
@@ -15,7 +16,7 @@ export default function ContactForm() {
                 type="text"
                 name="name"
                 label="Full Name"
-                value="name"
+
               />
             </Grid>
             <Grid item
@@ -30,7 +31,7 @@ export default function ContactForm() {
                 type="text"
                 name="email"
                 label="Your Email"
-                value="email"
+
               />
             </Grid>
             <Grid item
@@ -43,7 +44,7 @@ export default function ContactForm() {
                   variant="outlined"
                   type="text"
                   name="message"
-                  value="message"
+
                   label="Message"
                 />
               </Grid>
