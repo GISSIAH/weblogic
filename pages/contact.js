@@ -135,7 +135,7 @@ export default function contact() {
                 md={12}
                 lg={12}
                 xl={12}>
-                <Button variant="contained" color="success">Send</Button>
+                <Button variant="contained" type="submit" color="success">Send</Button>
               </Grid>
 
 
