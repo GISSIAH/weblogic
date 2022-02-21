@@ -19,14 +19,7 @@ export default function contact() {
       <main>
         <Box
           className={styles.mainBox}
-          sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '100%',
-            color: 'white'
-          }}>
+          >
           <Typography variant="h1" sx={{ fontWeight: '500' }} className={styles.hero}>Get in touch</Typography>
         </Box>
 

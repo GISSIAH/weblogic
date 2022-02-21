@@ -3,6 +3,11 @@
 .mainBox {
     height: 20vh;
     background: #2D637A;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .hero{
     font-size: 36pt;
