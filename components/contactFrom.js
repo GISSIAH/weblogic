@@ -9,7 +9,7 @@ export default function ContactForm() {
               md={12}
               lg={12}
               xl={12}
-
+            sx={{marginBottom:2}}
             >
               <TextField
                 variant="outlined"
@@ -25,6 +25,7 @@ export default function ContactForm() {
               md={12}
               lg={12}
               xl={12}
+              sx={{marginBottom:2}}
             >
               <TextField
                 variant="outlined"
@@ -39,7 +40,9 @@ export default function ContactForm() {
                 sm={12}
                 md={12}
                 lg={12}
-                xl={12}>
+                xl={12}
+                sx={{marginBottom:2}}
+                >
                 <TextField
                   variant="outlined"
                   type="text"
@@ -53,7 +56,9 @@ export default function ContactForm() {
                 sm={12}
                 md={12}
                 lg={12}
-                xl={12}>
+                xl={12}
+                sx={{display:'flex',justifyContent:'center'}}
+                >
                 <Button variant="contained" type="submit" color="success">Send</Button>
               </Grid>
 

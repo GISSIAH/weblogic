@@ -86,17 +86,17 @@ function MyApp({ Component, pageProps }) {
         fontWeight: 400
       },
       body1:{
-        fontSize:'1rem',
+        fontSize:'1.35rem',
         [`@media screen and (max-width: 1200px)`]: {
-          fontSize: "1rem"
+          fontSize: "1.35rem"
         },[`@media screen and (max-width: 992px)`]: {
-          fontSize: "1rem"
+          fontSize: "1.35rem"
         },[`@media screen and (max-width: 768px)`]: {
-          fontSize: "1rem"
+          fontSize: "1.25rem"
         },[`@media screen and (max-width: 600px)`]: {
-          fontSize: "1rem"
+          fontSize: "1.25rem"
         },[`@media screen and (max-width: 375px)`]: {
-          fontSize: "0.9rem"
+          fontSize: "1.15rem"
         },
 
       }

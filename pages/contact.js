@@ -82,13 +82,17 @@ export default function contact() {
 
 
         </Grid>
+        <Box sx={{display:'flex',justifyContent:'center'}}>
+          <Typography variant="h2">Message us!</Typography>
+        </Box>
 
         <Grid container spacing={4} sx={{
           justifyContent: 'center',
-          py: 2
+          marginTop:1,
+          marginBottom: '20vh'
         }}>
-          
-        <ContactForm/>
+
+          <ContactForm />
 
         </Grid>
 
