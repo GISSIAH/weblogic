@@ -5,7 +5,7 @@ import { Card, CardContent, Typography, Grid, TextField, Button } from '@mui/mat
 import { motion } from "framer-motion"
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai"
 import { FaFacebook, FaInstagram, FaTwitter, FaTiktok } from "react-icons/fa"
-import contactForm from "../components/contactFrom"
+import ContactForm from "../components/contactFrom"
 export default function contact() {
 
   return (
@@ -88,7 +88,7 @@ export default function contact() {
           py: 2
         }}>
           
-        <contactForm/>
+        <ContactForm/>
 
         </Grid>
 
