@@ -57,9 +57,9 @@ function MyApp({ Component, pageProps }) {
         },[`@media screen and (max-width: 768px)`]: {
           fontSize: "1.5rem"
         },[`@media screen and (max-width: 600px)`]: {
-          fontSize: "1.35rem"
+          fontSize: "1.5rem"
         },[`@media screen and (max-width: 375px)`]: {
-          fontSize: "1.05rem"
+          fontSize: "1.35rem"
         },
       },
       h3: {

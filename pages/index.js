@@ -47,7 +47,7 @@ export default function Home() {
             flexDirection: 'column',
             alignItems: 'center',
           }}>
-            <Typography variant="h2" sx={{ fontWeight: '600' }} className={styles.servicesHeading}>Our Services</Typography>
+            <Typography variant="h2" sx={{ fontWeight: '600', marginTop:2,marginBottom:2 }} >Our Services</Typography>
             <div >
               <Grid
                 className={styles.servicesContainer}
