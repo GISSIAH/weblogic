@@ -1,7 +1,7 @@
 import Head from "next/head"
 import styles from "../styles/contact.module.css"
 import { Box } from '@mui/system'
-import { Card, CardContent, Typography } from '@mui/material'
+import { Card, CardContent, Typography, Grid, TextField, Button } from '@mui/material'
 import { motion } from "framer-motion"
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai"
 import { FaFacebook, FaInstagram, FaTwitter, FaTiktok } from "react-icons/fa"
@@ -29,80 +29,121 @@ export default function contact() {
           <Typography variant="h1" sx={{ fontWeight: '500' }} className={styles.hero}>Get in touch</Typography>
         </Box>
 
-        <Box className={styles.heroRow}>
-          <Card>
-            <CardContent sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              alignItems: 'center'
-            }}>
-              <AiOutlinePhone size={30} />
-              <Typography variant="h6" sx={{ fontWeight: '400' }}>
-                phone number
-              </Typography>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              alignItems: 'center'
-            }}>
-              <AiOutlineMail size={30} />
-              <Typography variant="h6" sx={{ fontWeight: '400' }}>
-                email
-              </Typography>
-            </CardContent>
-          </Card>
-        </Box>
-        <Box className={styles.midSection}>
-          <Typography variant="h3" sx={{ fontWeight: '600' }}>
-            Or
-          </Typography>
-          <Typography variant="h3" sx={{ fontWeight: '600' }}>
-            follow us on
-          </Typography>
-        </Box>
-        <Box sx={{
-          display: 'flex',
-          gap: '2vw',
+        <Grid container spacing={6} sx={{
           justifyContent: 'center',
-          alignItems: 'center',
-          marginTop: '5vh'
+          py: 2
         }}>
-          <motion.div
-            animate={{
-              scale: [1, 2, 2, 1, 1],
-              rotate: [0, 0, 180, -180, 0,0],
-              borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-            }}
-          ><FaFacebook size={45} /></motion.div>
-          <motion.div
-            animate={{
-              scale: [1, 2, 2, 1, 1],
-              rotate: [0, 0, 180, -180, 0,0],
-              borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-            }}
-          ><FaInstagram size={45} /></motion.div>
-          <motion.div
-            animate={{
-              scale: [1, 2, 2, 1, 1],
-              rotate: [0, 0, 180, -180, 0,0],
-              borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-            }}
-          ><FaTwitter size={45} /></motion.div>
-          <motion.div
-            animate={{
-              scale: [1, 2, 2, 1, 1],
-              rotate: [0, 0, 180, -180, 0,0],
-              borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-            }}
-          ><FaTiktok size={45} /></motion.div>
-        </Box>
+          <Grid item
+            xs={12}
+            sm={4}
+            md={4}
+            lg={4}
+            xl={3}
+          >
+            <Card
+            >
+              <CardContent sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+                <AiOutlineMail size={30} />
+                <Typography varinat="caption">info@weblogic.tech</Typography>
+
+              </CardContent>
+
+            </Card>
+
+          </Grid>
+          <Grid item
+            xs={12}
+            sm={4}
+            md={4}
+            lg={4}
+            xl={3}
+          >
+            <Card>
+              <CardContent sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+                <AiOutlinePhone size={30} />
+                <Typography varinat="caption">info@weblogic.tech</Typography>
+
+              </CardContent>
+
+            </Card>
+
+          </Grid>
 
 
+        </Grid>
+
+        <Grid container spacing={4} sx={{
+          justifyContent: 'center',
+          py: 2
+        }}>
+          <form name="contact" method="POST" data-netlify="true">
+            <Grid item
+              xs={12}
+              sm={12}
+              md={12}
+              lg={12}
+              xl={12}
+
+            >
+              <TextField
+                variant="outlined"
+                type="text"
+                name="name"
+                label="Full Name"
+              />
+            </Grid>
+            <Grid item
+              xs={12}
+              sm={12}
+              md={12}
+              lg={12}
+              xl={12}
+            >
+              <TextField
+                variant="outlined"
+                type="text"
+                name="email"
+                label="Your Email"
+              />
+            </Grid>
+            <Grid item
+                xs={12}
+                sm={12}
+                md={12}
+                lg={12}
+                xl={12}>
+                <TextField
+                  variant="outlined"
+                  type="text"
+                  name="mesage"
+                  label="Message"
+                />
+              </Grid>
+              <Grid item
+                xs={12}
+                sm={12}
+                md={12}
+                lg={12}
+                xl={12}>
+                <Button variant="contained" color="success">Send</Button>
+              </Grid>
+
+
+
+          </form>
+
+
+        </Grid>
 
       </main>
 

@@ -20,9 +20,6 @@ export default function Navbar() {
                     <Link href="/services">
                         <a onClick={()=>{setClicked(false)}}><Typography variant="overline" style={{ fontStyle: 'bold', fontWeight: '500' }}>Services</Typography></a>
                     </Link>
-                    <Link href="/about">
-                        <a onClick={()=>{setClicked(false)}}><Typography variant="overline" style={{ fontStyle: 'bold', fontWeight: '500' }}>About</Typography></a>
-                    </Link>
                     <Link href="/contact">
                         <a onClick={()=>{setClicked(false)}}><Typography variant="overline" style={{ fontStyle: 'bold', fontWeight: '500' }}>Contact</Typography></a>
                     </Link>
@@ -48,9 +45,6 @@ export default function Navbar() {
                     </Link>
                     <Link href="/services">
                         <a onClick={()=>{setClicked(false)}}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500',marginTop:'5px' }}>Services</Typography></a>
-                    </Link>
-                    <Link href="/about">
-                        <a onClick={()=>{setClicked(false)}}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500',marginTop:'5px' }}>About</Typography></a>
                     </Link>
                     <Link href="/contact">
                         <a onClick={()=>{setClicked(false)}}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500' }}>Contact</Typography></a>

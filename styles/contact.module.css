@@ -13,20 +13,13 @@
       align-items: center;
       gap:5vw;
   }
-  .midSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    margin-top: 5vh;
-  }
-  
-  
-  .servicesContainer{
+  .gridWrapper{
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
+
   @media (max-width: 1200px) {
     .hero{
       font-size: 26pt;
@@ -37,9 +30,7 @@
       text-align: center;
       width: 70vw;
     }
-    .servicesHeading{
-      font-size: 22pt;
-    }
+
   }
   
   @media (max-width: 992px) {
@@ -52,12 +43,10 @@
       text-align: center;
       width: 80vw;
     }
-    .servicesHeading{
-      font-size: 22pt;
-    }
+
   
   
-    
+  
   }
   
   @media (max-width: 768px) {
@@ -70,11 +59,7 @@
       text-align: center;
       width: 95vw;
     }
-    .servicesHeading{
-      font-size: 20pt;
-    }
-    
-    
+
   
     
   }
@@ -91,9 +76,7 @@
       text-align: center;
       width: 100vw;
     }
-    .servicesHeading{
-      font-size: 20pt;
-    }
+
     .heroRow{
         display: flex;
         flex-direction: column;
@@ -115,9 +98,7 @@
       text-align: center;
       width: 100vw;
     }
-    .servicesHeading{
-      font-size: 20pt;
-    }
+
     
   
   

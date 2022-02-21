@@ -21,7 +21,6 @@ export default function services() {
                     className={styles.mainBox}
                 >
                     <div
-
                         style={{
                             display: 'flex',
                             flexDirection: 'column',
