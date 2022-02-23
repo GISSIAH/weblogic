@@ -58,7 +58,7 @@ export default function services() {
                             xl={6}>
                             <Paper  elevation={8}>
                                 <ServiceSection url="https://res.cloudinary.com/attic-gis/image/upload/v1645004264/cloud-3406627_1920_yhuijn.jpg" title="Web Hosting" desc="We provide affordable and reliable Web Hosting services. Worry less about hosting your website with  our technical support on all our web Hosting packages." />
-                                <ServiceSection url="https://res.cloudinary.com/attic-gis/image/upload/v1645004266/digitization-5231610_1920_pyad0t.jpg" title="Digital Transformation" desc="We help you integrate digital technology into all areas of your business, fundamentally changing how you operate and deliver value to your customers." />
+                                <ServiceSection url="https://res.cloudinary.com/attic-gis/image/upload/v1645004266/digitization-5231610_1920_pyad0t.jpg" title="Digital Transformation" desc="We help you integrate digital technology into all areas of your business, fundamentally changing how you operate and deliver value to your customers. The world around is changing, why not change too." />
                             </Paper>
                         </Grid>
                     </Grid>
