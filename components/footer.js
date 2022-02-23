@@ -32,8 +32,8 @@ export default function Footer() {
               xl={3}
             >
               <Typography variant="h4">Company</Typography>
-              <Link href="/about"><Typography variant="body1">About</Typography></Link>
-              <Link href="/contact"><Typography variant="body1">Contact</Typography></Link>
+              <Link href="/about"><a><Typography variant="body1">About</Typography></a></Link>
+              <Link href="/contact"><a><Typography variant="body1">Contact</Typography></a></Link>
             </Grid>
 
 
@@ -52,10 +52,10 @@ export default function Footer() {
               xl={6}
             >
               <Typography variant="h4">Services</Typography>
-              <Link href="/services"><Typography variant="body1">Web Design</Typography></Link>
-              <Link href="/services"><Typography variant="body1">Web Development</Typography></Link>
-              <Link href="/services"><Typography variant="body1">Web Hosting</Typography></Link>
-              <Link href="/services"><Typography variant="body1">Digital Transformation</Typography></Link>
+              <Link href="/services"><a><Typography variant="body1">Web Design</Typography></a></Link>
+              <Link href="/services"><a><Typography variant="body1">Web Development</Typography></a></Link>
+              <Link href="/services"><a><Typography variant="body1">Web Hosting</Typography></a></Link>
+              <Link href="/services"><a><Typography variant="body1">Digital Transformation</Typography></a></Link>
             </Grid>
             <Grid item
               sx={{
