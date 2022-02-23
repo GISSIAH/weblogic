@@ -53,8 +53,8 @@ export default function Footer() {
             >
               <Typography variant="h4">Services</Typography>
               <Link href="/services"><Typography variant="body1">Web Design</Typography></Link>
-              <Link   href="/services"><Typography variant="body1">Web Development</Typography></Link>
-              <Link  href="/services"><Typography variant="body1">Web Hosting</Typography></Link>
+              <Link href="/services"><Typography variant="body1">Web Development</Typography></Link>
+              <Link href="/services"><Typography variant="body1">Web Hosting</Typography></Link>
               <Link href="/services"><Typography variant="body1">Digital Transformation</Typography></Link>
             </Grid>
             <Grid item
@@ -82,6 +82,7 @@ export default function Footer() {
         </div>
 
       </Box>
+      <Typography sx={{marginTop:2}} variant="subtitle1">WEB LOGIC 2022 ©</Typography>
     </footer>
 
   )

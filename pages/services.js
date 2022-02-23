@@ -44,7 +44,7 @@ export default function services() {
                             md={6}
                             lg={6}
                             xl={6}>
-                            <Paper >
+                            <Paper elevation={8}>
                                 <ServiceSection url="https://res.cloudinary.com/attic-gis/image/upload/v1644162455/NicePng_technology-icon-png_1192437_fads0n.png" title="Web Design" desc="Our Team of dynamic Web Designers provide stunning designs. We design exactly what you think of in mind to better represent your brand. Your satisfaction is our joy." />
                                 <ServiceSection url="https://res.cloudinary.com/attic-gis/image/upload/v1645004269/code-1076536_1920_n0yh46.jpg" title="Web Development" desc="We are specialised in creating a responsive web design and development to enhance good looking appearance of websites on all user devices irrespective of the user's device screen size." />
                             </Paper>
@@ -56,7 +56,7 @@ export default function services() {
                             md={6}
                             lg={6}
                             xl={6}>
-                            <Paper  >
+                            <Paper  elevation={8}>
                                 <ServiceSection url="https://res.cloudinary.com/attic-gis/image/upload/v1645004264/cloud-3406627_1920_yhuijn.jpg" title="Web Hosting" desc="We provide affordable and reliable Web Hosting services. Worry less about hosting your website with  our technical support on all our web Hosting packages." />
                                 <ServiceSection url="https://res.cloudinary.com/attic-gis/image/upload/v1645004266/digitization-5231610_1920_pyad0t.jpg" title="Digital Transformation" desc="We help you integrate digital technology into all areas of your business, fundamentally changing how you operate and deliver value to your customers." />
                             </Paper>

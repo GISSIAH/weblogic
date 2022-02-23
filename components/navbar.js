@@ -2,52 +2,51 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import styles from "../styles/navbar.module.css"
 import { FaBars, FaTimes } from "react-icons/fa"
-import { Typography } from '@mui/material'
+import { CardMedia, Typography } from '@mui/material'
+import {HiOutlineGlobe} from "react-icons/hi"
+import Image from 'next/image'
 export default function Navbar() {
     const [clicked, setClicked] = useState(false)
     return (
         <nav className={styles.navbar}>
             <div className={styles.deskMenu}>
                 <div className={styles.leftSide} >
-                    <Typography variant='h4'  style={{ fontWeight: '600'}}>
-                        Web Logic
-                    </Typography>
+
+                    <Image src="https://res.cloudinary.com/attic-gis/image/upload/v1645646929/logo3_qo64sc.png" width={250} height={200} alt="logo" />
                 </div>
                 <div className={styles.rightSide}>
                     <Link href="/">
-                        <a onClick={()=>{setClicked(false)}}><Typography variant="overline" style={{ fontStyle: 'bold', fontWeight: '500' }}> Home</Typography></a>
+                        <a onClick={() => { setClicked(false) }}><Typography variant="overline" style={{ fontStyle: 'bold', fontWeight: '500' }}> Home</Typography></a>
                     </Link>
                     <Link href="/services">
-                        <a onClick={()=>{setClicked(false)}}><Typography variant="overline" style={{ fontStyle: 'bold', fontWeight: '500' }}>Services</Typography></a>
+                        <a onClick={() => { setClicked(false) }}><Typography variant="overline" style={{ fontStyle: 'bold', fontWeight: '500' }}>Services</Typography></a>
                     </Link>
                     <Link href="/contact">
-                        <a onClick={()=>{setClicked(false)}}><Typography variant="overline" style={{ fontStyle: 'bold', fontWeight: '500' }}>Contact</Typography></a>
+                        <a onClick={() => { setClicked(false) }}><Typography variant="overline" style={{ fontStyle: 'bold', fontWeight: '500' }}>Contact</Typography></a>
                     </Link>
                 </div>
             </div>
             <div className={styles.mobileMenu}>
                 <div className={styles.logo}>
-                    <Typography variant='h4'  style={{ fontSize:'1.8rem', fontWeight: '600' }}>
-                        Web Logic
-                    </Typography>
+                    <Typography variant='h2' sx={{fontWeight:800}}>Web Logic</Typography>
                     <div
                         className={styles.menuIcon}
                         onClick={() => {
                             setClicked(!clicked);
                         }}
                     >
-                        {clicked ? <FaTimes size={20}/> : <FaBars size={25} color="white" />}
+                        {clicked ? <FaTimes size={20} /> : <FaBars size={25} />}
                     </div>
                 </div>
                 <div className={clicked ? styles.active : styles.normal}>
                     <Link href="/">
-                        <a onClick={()=>{setClicked(false)}}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500',marginTop:'5px' }}> Home</Typography></a>
+                        <a onClick={() => { setClicked(false) }}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500', marginTop: '5px' }}> Home</Typography></a>
                     </Link>
                     <Link href="/services">
-                        <a onClick={()=>{setClicked(false)}}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500',marginTop:'5px' }}>Services</Typography></a>
+                        <a onClick={() => { setClicked(false) }}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500', marginTop: '5px' }}>Services</Typography></a>
                     </Link>
                     <Link href="/contact">
-                        <a onClick={()=>{setClicked(false)}}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500' }}>Contact</Typography></a>
+                        <a onClick={() => { setClicked(false) }}><Typography variant="body1" style={{ fontStyle: 'bold', fontWeight: '500' }}>Contact</Typography></a>
                     </Link>
                 </div>
 
