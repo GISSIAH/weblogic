@@ -12,7 +12,7 @@ export default function services() {
         <div className={styles.container}>
             <Head>
                 <title>Digital Services Provided by Web Logic</title>
-                <meta name="description" content="Get your business a digital " />
+                <meta name="description" content="Grow your business with web logic. Need a website ?, we got you covered . We also transform businesses into a new age fit. " />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
