@@ -12,7 +12,7 @@ export default function Navbar() {
             <div className={styles.deskMenu}>
                 <div className={styles.leftSide} >
 
-                    <Image src="https://res.cloudinary.com/attic-gis/image/upload/v1645646929/logo3_qo64sc.png" width={250} height={200} alt="logo" />
+                    <Image src="https://res.cloudinary.com/attic-gis/image/upload/v1645716343/WhatsApp_Image_2022-02-24_at_12.03.09_yelpxe.jpg" width={250} height={35} alt="logo" />
                 </div>
                 <div className={styles.rightSide}>
                     <Link href="/">
@@ -28,7 +28,7 @@ export default function Navbar() {
             </div>
             <div className={styles.mobileMenu}>
                 <div className={styles.logo}>
-                    <Typography variant='h2' sx={{fontWeight:800}}>Web Logic</Typography>
+                    <Image src="https://res.cloudinary.com/attic-gis/image/upload/v1645716343/WhatsApp_Image_2022-02-24_at_12.03.09_yelpxe.jpg" width={225} height={35} alt="logo" />
                     <div
                         className={styles.menuIcon}
                         onClick={() => {

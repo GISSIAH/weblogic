@@ -45,8 +45,8 @@ export default function services() {
                             lg={6}
                             xl={6}>
                             <Paper elevation={8}>
-                                <ServiceSection url="https://res.cloudinary.com/attic-gis/image/upload/v1644162455/NicePng_technology-icon-png_1192437_fads0n.png" title="Web Design" desc="Our Team of dynamic Web Designers provide stunning designs. We design exactly what you think of in mind to better represent your brand. Your satisfaction is our joy." />
-                                <ServiceSection url="https://res.cloudinary.com/attic-gis/image/upload/v1645004269/code-1076536_1920_n0yh46.jpg" title="Web Development" desc="We are specialised in creating a responsive web design and development to enhance good looking appearance of websites on all user devices irrespective of the user's device screen size." />
+                                <ServiceSection url="https://res.cloudinary.com/attic-gis/image/upload/v1644162455/NicePng_technology-icon-png_1192437_fads0n.png" title="Web Design" desc="Our Team of dynamic. Web Designers provide stunning designs. Your satisfaction is our joy. We design exactly what you think of in mind to better represent your industry." />
+                                <ServiceSection url="https://res.cloudinary.com/attic-gis/image/upload/v1645004269/code-1076536_1920_n0yh46.jpg" title="Web Development" desc="Specialized interactive and responsive websites to enhance user experience on all user devices irrespective of the  device." />
                             </Paper>
 
                         </Grid>
